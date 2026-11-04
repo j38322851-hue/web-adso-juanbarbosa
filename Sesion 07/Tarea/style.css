@@ -1,0 +1,198 @@
+/* 
+  
+   ¿Cuándo usar Flexbox y cuándo Grid?
+   - Usaríamos Flexbox cuando diseñamos en una sola dimensión (en una sola 
+     fila o columna), por ejemplo para barras de navegación o alinear elementos 
+     de forma lineal.
+   - Usaríamos Grid cuando diseñamos en dos dimensiones al mismo tiempo 
+     (filas y columnas de manera estructurada), como en la distribución general 
+     de una página completa o en galerías de tarjetas donde necesitamos un 
+     control total del espacio bidimensional.
+*/
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.titulo-seccion {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #0f172a;
+    text-align: center;
+}
+
+/* ==========================================================================
+   VITRINA CON CSS GRID (Aplicando repeat con auto-fit y minmax)[span_1](start_span)[span_1](end_span)
+   ========================================================================== */
+.vitrina {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjetas de Productos */
+.producto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-4px);
+}
+
+.producto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.categoria {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #64748b;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.producto h3 {
+    font-size: 1rem;
+    color: #1e293b;
+    margin: 0.25rem 0 0.5rem 0;
+}
+
+.precio {
+    font-weight: bold;
+    color: #0284c7;
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Botones */
+.boton-comprar {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #1e293b;
+}
+
+/* Estado Agotado */
+.producto.agotado {
+    opacity: 0.75;
+}
+
+.insignia-agotado {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.boton-comprar:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Pie de Página */
+.pie-pagina {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 2.5rem 2rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.pie-pagina .columna h3 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.pie-pagina .columna p, 
+.pie-pagina .columna li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.pie-pagina ul {
+    list-style: none;
+}
+
+.pie-pagina ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.pie-pagina ul li a:hover {
+    color: #38bdf8;
+}

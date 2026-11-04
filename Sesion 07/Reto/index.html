@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Peluquería & Barbería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor Principal con Grid Layout -->
+    <div class="dashboard-container">
+
+        <!-- 1. ENCABEZADO -->
+        <header class="header">
+            <h1>Dashboard Barbería</h1>
+            <p>Panel de Control General</p>
+        </header>
+
+        <!-- 1. MENÚ LATERAL -->
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Clientes</a>
+                <a href="#">Reportes</a>
+                <a href="#">Configuración</a>
+            </nav>
+        </aside>
+
+        <!-- 1. CONTENIDO PRINCIPAL -->
+        <main class="content">
+            
+            <!-- 2. CUATRO INDICADORES DEL NEGOCIO -->
+            <section class="indicators-grid">
+                <div class="card indicator">
+                    <h3>Cortes Hoy</h3>
+                    <p class="number">18</p>
+                </div>
+                <div class="card indicator">
+                    <h3>Ingresos del Día</h3>
+                    <p class="number">$450.000</p>
+                </div>
+                <div class="card indicator">
+                    <h3>Clientes Frecuentes</h3>
+                    <p class="number">42</p>
+                </div>
+                <div class="card indicator">
+                    <h3>Citas Pendientes</h3>
+                    <p class="number">5</p>
+                </div>
+            </section>
+
+            <!-- 3. GALERÍA DE PRODUCTOS / SERVICIOS MÁS VENDIDOS -->
+            <section class="products-section">
+                <h2>Productos y Servicios Más Vendidos</h2>
+                <div class="gallery-grid">
+                    
+                    <!-- Elemento 1 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&auto=format&fit=crop&q=60" alt="Low Fade">
+                        <div class="item-info">
+                            <h3>Low Fade</h3>
+                            <p>$15.000</p>
+                        </div>
+                    </div>
+
+                    <!-- Elemento 2 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=500&auto=format&fit=crop&q=60" alt="Taper Fade">
+                        <div class="item-info">
+                            <h3>Taper Fade + Limpieza</h3>
+                            <p>$30.000</p>
+                        </div>
+                    </div>
+
+                    <!-- Elemento 3 (Este ocupa 2 columnas según el punto 3 del reto) -->
+                    <div class="gallery-item wide-item">
+                        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=500&auto=format&fit=crop&q=60" alt="Combo Completo Spa">
+                        <div class="item-info">
+                            <h3>Combo VIP: Mullet + PlayStation 5 + Spa</h3>
+                            <p>$50.000 (Promoción Especial)</p>
+                        </div>
+                    </div>
+
+                    <!-- Elemento 4 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1517832606293-7ae2fc733aa7?w=500&auto=format&fit=crop&q=60" alt="Corte Militar">
+                        <div class="item-info">
+                            <h3>Corte Militar</h3>
+                            <p>$20.000</p>
+                        </div>
+                    </div>
+
+                    <!-- Elemento 5 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1534723486362-84c2c99a808f?w=500&auto=format&fit=crop&q=60" alt="Media Luna">
+                        <div class="item-info">
+                            <h3>Media Luna</h3>
+                            <p>$25.000</p>
+                        </div>
+                    </div>
+
+                    <!-- Elemento 6 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop&q=60" alt="Arreglo de Barba">
+                        <div class="item-info">
+                            <h3>Arreglo de Barba Pro</h3>
+                            <p>$12.000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 1. PIE DE PÁGINA -->
+        <footer class="footer">
+            <p>Panel de Administración - Arboleda del Seminario | Cortes especiales para Pablo</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
