@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Juan Pablo Barbosa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Portada / Presentación -->
+        <header class="portfolio-header">
+            <div class="avatar">👨‍💻</div>
+            <h1>Juan Pablo Barbosa</h1>
+            <p class="bio">Estudiante de Análisis y Desarrollo de Software (ADSO). Apasionado por la tecnología, el diseño web y la programación.</p>
+        </header>
+
+        <!-- Sección de Retos -->
+        <section class="challenges-section">
+            <h2>Mis Retos y Proyectos</h2>
+            
+            <div class="cards-grid">
+                <!-- Tarjeta Reto 1 -->
+                <div class="challenge-card">
+                    <h3>Reto 1</h3>
+                    <p>Sesión 1</p>
+                    <a href="Sesion 01/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Reto 2 -->
+                <div class="challenge-card">
+                    <h3>Reto 2</h3>
+                    <p>Sesión 2</p>
+                    <a href="Sesion 02/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Reto 3 -->
+                <div class="challenge-card">
+                    <h3>Reto 3</h3>
+                    <p>Sesión 3</p>
+                    <a href="Sesion 03/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Reto 4 -->
+                <div class="challenge-card">
+                    <h3>Reto 4</h3>
+                    <p>Sesión 4</p>
+                    <a href="Sesion 04/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Reto 5 -->
+                <div class="challenge-card">
+                    <h3>Reto 5</h3>
+                    <p>Sesión 05</p>
+                    <a href="Sesion 05/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Reto 6 -->
+                <div class="challenge-card">
+                    <h3>Reto 6</h3>
+                    <p>Sesión 06</p>
+                    <a href="Sesion 06/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Reto 7 -->
+                <div class="challenge-card">
+                    <h3>Reto 7</h3>
+                    <p>Sesión 07</p>
+                    <a href="Sesion 07/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Sesión 8 y 9 -->
+                <div class="challenge-card">
+                    <h3>Retos 8 y 9</h3>
+                    <p>Sesión 08 09</p>
+                    <a href="Sesion 08 09/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Sesión 10 -->
+                <div class="challenge-card">
+                    <h3>Reto 10</h3>
+                    <p>Sesión 10</p>
+                    <a href="Sesion 10/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+
+                <!-- Tarjeta Sesión 11 y 12 -->
+                <div class="challenge-card">
+                    <h3>Retos 11 12</h3>
+                    <p>Sesión 11 12</p>
+                    <a href="Sesion 11 12/Reto/index.html" class="btn-link">Ver Reto</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

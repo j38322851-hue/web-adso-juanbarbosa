@@ -1,0 +1,231 @@
+:root {
+    --color-primario: #0f172a;
+    --color-secundario: #f8fafc;
+    --color-acento: #0284c7;
+    --color-acento-hover: #0369a1;
+    --color-texto: #334155;
+    --color-tarjeta: #ffffff;
+    --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --transicion: all 0.3s ease;
+}
+
+body.oscuro {
+    --color-primario: #f8fafc;
+    --color-secundario: #0f172a;
+    --color-acento: #38bdf8;
+    --color-acento-hover: #7dd3fc;
+    --color-texto: #cbd5e1;
+    --color-tarjeta: #1e293b;
+    --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    line-height: 1.6;
+    transition: var(--transicion);
+}
+
+header {
+    background-color: var(--color-tarjeta);
+    padding: 1rem;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+    transition: var(--transicion);
+}
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+.badge-modo {
+    font-size: 0.85rem;
+    color: var(--color-acento);
+    font-weight: bold;
+}
+
+.hero {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+}
+
+.cta-btn:hover {
+    background-color: var(--color-acento-hover);
+    transform: translateY(-2px);
+}
+
+.beneficios {
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primario);
+    font-size: 1.75rem;
+}
+
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--color-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--color-tarjeta);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .grid-beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-beneficios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
