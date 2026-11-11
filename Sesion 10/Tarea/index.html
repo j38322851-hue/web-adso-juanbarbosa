@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Tareas.</title>
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+    <main class="task-container">
+        
+        <header class="task-header">
+            <div class="header-title-group">
+                <span class="task-icon-badge" role="img" aria-label="Icono de lista de tareas">📋</span>
+                <h1>Mis tareas.</h1>
+            </div>
+            <button class="btn-icon-only" aria-label="Cambiar tema visual">😎</button>
+        </header>
+
+        <div class="alert alert-info oculto">
+            ¡Atención! No hay tareas pendientes por realizar en este momento.
+        </div>
+
+        <form class="task-form">
+            <input type="text" class="input" placeholder="Escribe una nueva tarea..." required>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+
+        <ul class="task-list">
+            <li class="task-item">
+                <span class="task-text">Cocinar.</span>
+                <button class="btn btn-danger btn-icon-only" aria-label="Eliminar tarea">🗑️</button>
+            </li>
+            
+            <li class="task-item">
+                <span class="task-text hecha">Estudiar.</span>
+                <button class="btn btn-danger btn-icon-only" aria-label="Eliminar tarea completada">🗑️</button>
+            </li>
+
+            <li class="task-item">
+                <span class="task-text">Jugar futbol.</span>
+                <button class="btn btn-danger btn-icon-only" aria-label="Eliminar tarea">🗑️</button>
+            </li>
+
+            <li class="task-item">
+                <span class="task-text">Comer.</span>
+                <button class="btn btn-danger btn-icon-only" aria-label="Eliminar tarea">🗑️</button>
+            </li>
+        </ul>
+
+        <footer class="task-counter">
+            <p><strong>3 pendientes</strong> de 4 totales</p>
+        </footer>
+
+    </main>
+</body>
+</html>

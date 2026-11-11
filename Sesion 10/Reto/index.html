@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estilos - UI Kit</title>
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Encabezado de la Guía -->
+        <header class="kit-header">
+            <h1>🎨 Mi Guía de Estilos (UI Kit)</h1>
+            <p>Componentes base y sistema de diseño reutilizable para proyectos web.</p>
+        </header>
+
+        <!-- 1. Paleta de Colores -->
+        <section class="kit-section">
+            <h2>1. Paleta de Colores</h2>
+            <div class="color-grid">
+                <div class="color-swatch swatch-primary"><span>--color-primario</span></div>
+                <div class="color-swatch swatch-secondary"><span>--color-secundario</span></div>
+                <div class="color-swatch swatch-danger"><span>--color-peligro</span></div>
+                <div class="color-swatch swatch-success"><span>--color-exito</span></div>
+                <div class="color-swatch swatch-background"><span>--color-fondo</span></div>
+            </div>
+        </section>
+
+        <!-- 2. Botones -->
+        <section class="kit-section">
+            <h2>2. Botones</h2>
+            <div class="button-group">
+                <button class="btn btn-primary">Principal</button>
+                <button class="btn btn-secondary">Secundario</button>
+                <button class="btn btn-danger">Peligro</button>
+                <button class="btn" disabled>Deshabilitado</button>
+            </div>
+        </section>
+
+        <!-- 3. Alertas e Insignias -->
+        <section class="kit-section">
+            <h2>3. Alertas e Insignias</h2>
+            
+            <h3>Alertas (4 tipos)</h3>
+            <div class="alert alert-info">Información: El sistema se actualizará pronto.</div>
+            <div class="alert alert-success">Éxito: Los cambios se guardaron correctamente.</div>
+            <div class="alert alert-warning">Advertencia: Verifique su conexión de red.</div>
+            <div class="alert alert-danger">Error: No se pudo completar la operación.</div>
+
+            <h3 style="margin-top: 1.5rem;">Insignias (3 tipos)</h3>
+            <div class="badge-group">
+                <span class="badge badge-primary">Primaria</span>
+                <span class="badge badge-secondary">Secundaria</span>
+                <span class="badge badge-accent">Acento</span>
+            </div>
+        </section>
+
+        <!-- 4. Estados -->
+        <section class="kit-section">
+            <h2>4. Estados</h2>
+            <div class="states-group">
+                
+                <!-- Estado Cargando -->
+                <div class="state-item">
+                    <p><strong>.cargando (Girando):</strong></p>
+                    <div class="cargando"></div>
+                </div>
+
+                <!-- Estado Hecha -->
+                <div class="state-item">
+                    <p><strong>Texto.</strong></p>
+                    <p class="hecha">✓ Operación realizada y verificada con éxito.</p>
+                </div>
+
+                <!-- Estado Input Error -->
+                <div class="state-item">
+                    <p><strong>Campo .input.error con small.error:</strong></p>
+                    <div class="form-group">
+                        <input type="text" class="input input.error" value="usuario_invalido#">
+                        <small class="error">El nombre de usuario contiene caracteres no permitidos.</small>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
